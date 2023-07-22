@@ -1,0 +1,290 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+.hero {
+    background: #1d2026;
+    min-height: 100vh;
+    width: 100%;
+    color: #ffffff;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    padding: 6px 8%;
+}
+
+nav .menu-img {
+    width: 25px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+nav .logo {
+    width: 160px;
+    cursor: pointer;
+}
+
+nav ul {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+button {
+    background: #efefef;
+    height: 30px;
+    width: 60px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+button span {
+    display: block;
+    background: #999;
+    height: 26px;
+    width: 26px;
+    border-radius: 50%;
+    margin-left: 2px;
+    transition: 0.5s, margin-left 0.5s;
+}
+
+.lamp-container {
+    position: absolute;
+    top: -70px;
+    left: 29%;
+    width: 200px;
+}
+
+.lamp {
+    width: 100%;
+}
+
+.light {
+    position: absolute;
+    top: 97%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 700px;
+    margin-left: -10px;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.text-container {
+    max-width: 600px;
+    margin-top: 3%;
+    margin-left: 53%;
+}
+
+.text-container h1 {
+    font-size: 60px;
+    font-weight: 400;
+}
+
+.text-container a {
+    text-decoration: none;
+    background: #00986f;
+    padding: 14px 40px;
+    display: inline-block;
+    color: #ffffff;
+    font-size: 18px;
+    margin-top: 30px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.text-container a:hover {
+    background: #08cd5a;
+    font-style: italic;
+}
+
+.text-container p {
+    margin-top: 6px;
+}
+
+.control {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 150px;
+}
+
+.control .line {
+    width: 250px;
+    height: 4px;
+    background: #ffffff;
+    margin: 0 20px;
+    border-radius: 2px;
+}
+
+.control .line span {
+    width: 50%;
+    height: 7px;
+    margin-top: -1px;
+    border-radius: 4px;
+    background: #00986f;
+    display: block;
+}
+
+.active {
+    background: green;
+}
+
+.active span {
+    background: #fff;
+    margin-left: 31px;
+}
+
+.on {
+    opacity: 1;
+}
+
+
+@media (min-width:320px) and (max-width:400px) {
+
+    .text-container h1 {
+        font-size: 30px;
+    }
+
+    .text-container {
+        max-width: 600px;
+        margin-top: 40%;
+        margin-left: 5%;
+    }
+
+    nav li {
+        margin-top: 40px;
+    }
+
+    .lamp {
+        width: 120px;
+        margin-left: 10px;
+    }
+
+    #light {
+        left: 42%;
+        width: 410px;
+    }
+
+    nav a {
+        margin-left: -40px;
+    }
+
+    nav ul {
+        flex: 0;
+        margin-left: 110px;
+        margin-top: -51px;
+    }
+
+    #btn {
+        margin-top: 99px;
+        margin-left: -95px;
+        cursor: pointer;
+    }
+
+    .logo-img {
+        width: 90px;
+        margin-top: -100px;
+        margin-left: -10px;
+    }
+
+    .menu-img {
+        margin-top: -89px;
+    }
+}
+
+@media (min-width:400px) and (max-width:700px) {
+
+    .text-container h1 {
+        font-size: 30px;
+    }
+
+    nav ul {
+        flex: 0;
+        margin-left: 70px;
+        margin-top: -60px;
+    }
+
+    nav li {
+        margin-top: 40px;
+    }
+
+    .lamp {
+        width: 120px;
+        margin-left: 10px;
+    }
+
+    nav a {
+        margin-left: 55px;
+    }
+
+    #btn {
+        margin-top: 125px;
+        margin-left: -80px;
+    }
+
+    .logo-img {
+        width: 90px;
+        margin-top: -126px;
+    }
+
+    .menu-img {
+        margin-top: -124px;
+    }
+
+    #light {
+        left: 37%;
+        width: 450px;
+    }
+
+    .text-container {
+        margin-top: 30%;
+        max-width: 600px;
+        margin-left: 5%;
+    }
+}
+
+@media (min-width:700px) and (max-width:1042px) {
+    .logo-img {
+        width: 150px;
+    }
+
+    .lamp {
+        width: 140px;
+        margin-left: -30px;
+    }
+
+    #light {
+        left: 26%;
+        margin-left: -18px;
+        width: 510px;
+    }
+
+    nav ul {
+        flex: 0;
+        margin-left: 173px;
+    }
+
+    #btn {
+        margin-left: 20px;
+    }
+}
